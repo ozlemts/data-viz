@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import Layout from "../components/Layout";
+import LineChart from "../components/charts/LineChart";
 
 const Home: NextPage = () => {
   return (
-    <Layout>edh</Layout>
+    <Layout>
+      <LineChart/>
+    </Layout>
   )
 }
 
