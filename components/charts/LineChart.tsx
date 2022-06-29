@@ -6,15 +6,22 @@ const LineChart: NextPage = () => {
   const option = {
     xAxis: {
       type: 'category',
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      data: [ 'Mercury','Venus','Earth', 'Mars','Jupiter', 'Saturn','Uranus', 'Neptune'],
+      axisLabel: {
+        rotate: 90
+      },
     },
     yAxis: {
       type: 'value'
     },
     series: [
       {
-        data: [120, 200, 150, 80, 70, 110, 130],
-        type: 'bar'
+        data: [0,0,1,2,79,82,27,14],
+        type: 'bar',
+        showBackground: true,
+        backgroundStyle: {
+          color: 'rgba(180, 180, 180, 0.1)'
+        }
       }
     ]
   };
